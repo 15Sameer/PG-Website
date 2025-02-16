@@ -329,12 +329,36 @@ h2 {
     .room-overlay {
       font-size: 14px;
       padding: 8px 0;
+      text-align: center;
     }
   
     .room-overlay h4 {
       margin: 0;
       font-size: 14px;
       font-weight: bold;
+      text-align:left;
+      padding: 5px;
     }
   }
   
+
+  /* ✅ Ensuring vertical room layout for specified dimensions */
+@media screen and (max-width: 1368px) and (min-width: 820px) {
+  .rooms-container {
+      display: flex;
+      flex-direction: column; /* Stack rooms vertically */
+      align-items: center; /* Center the content */
+      gap: 20px; /* Add spacing between rooms */
+  }
+
+  .room-card {
+      width: 100%; /* Ensures full width */
+      max-width: 500px; /* Prevents it from being too wide */
+  }
+
+  .room-image {
+      height: auto; /* Maintain aspect ratio */
+      max-height: 500px; /* Adjust height to fit */
+  }
+}
+
