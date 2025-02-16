@@ -13,7 +13,7 @@ const Footer = () => {
       }}
     >
       <p className="mb-0">
-        &copy; {new Date().getFullYear()} Vinayaka PG | Designed with ❤️ by <strong>Comrades</strong>
+        &copy; {new Date().getFullYear()} Vinayaka PG | Designed with ❤️ by <strong>SKAPTRON</strong>
       </p>
     </footer>
   );
